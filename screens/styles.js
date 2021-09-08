@@ -1,23 +1,18 @@
+import { Yellowtail_400Regular } from '@expo-google-fonts/yellowtail';
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  text: {
-    fontSize: 50,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: 'yellow',
-  },
+
   Text1: {
-    fontFamily: 'YellowTail',
+    fontFamily: Yellowtail_400Regular,
     fontWeight: 'bold',
     fontSize: 96,
     fontStyle: 'italic',
-    marginTop: '10%',
+    marginTop: '20%',
     textAlign: 'center',
     color: '#DBB364',
   },
   Text2: {
-    fontFamily: 'Arial',
     fontSize: 18,
     color: '#fff',
     textAlign: 'center',
@@ -25,15 +20,14 @@ export default StyleSheet.create({
   Button: {
     backgroundColor: '#DBB364',
     alignItems: 'center',
-    height: 80,
+    height: '100%',
     borderRadius: 20,
   },
   Text3: {
     color: '#fff',
-    fontFamily: 'Arial',
     fontSize: 15,
     textAlign: 'center',
-    marginTop: '2%',
+    marginTop: '4%',
   },
   Text4: {
     color: 'black',
