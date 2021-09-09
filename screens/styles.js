@@ -105,10 +105,9 @@ export default StyleSheet.create({
   },
   item: {
     backgroundColor: '#DBB364',
-    padding: '5%',
-    marginVertical: '2%',
-    marginHorizontal: '7%',
-    borderRadius: 50,
+    padding: 20,
+    borderColor: 'black',
+    borderTopWidth: 3,
   },
   title: {
     color: '#fff',
@@ -122,4 +121,19 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#DBB364',
   },
+  TopBar: {
+    alignSelf: 'center',
+    borderBottomStartRadius: 15,
+    borderBottomEndRadius: 15,
+    width: '50%',
+    backgroundColor: '#DBB364',
+    borderWidth: 3,
+    borderTopWidth: 0,
+
+  },
+  BarText: {
+    fontSize: 35,
+    textAlign: 'center',
+    color: '#fff',
+  }
 });

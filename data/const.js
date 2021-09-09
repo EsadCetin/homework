@@ -30,5 +30,25 @@ export const DATA = [
         id: '7',
         title: '7-G',
     },
+    {
+        id: '8',
+        title: '8-H',
+    },
+    {
+        id: '9',
+        title: '9-J',
+    },
+    {
+        id: '10',
+        title: '10-K',
+    },
+    {
+        id: '11',
+        title: '11-L',
+    },
+    {
+        id: '12',
+        title: '12-M',
+    },
 
 ]
