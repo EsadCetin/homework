@@ -2,8 +2,9 @@ import { View, Text, TouchableOpacity, } from "react-native";
 import React from 'react';
 import styles from './styles.js'
 import { FontAwesome } from '@expo/vector-icons';
+import { NavigationContainer } from "@react-navigation/native";
 
-function SignUpScreen() {
+function SignUpScreen({ navigation }) {
 
     return (
         <View style={styles.Screen}>
@@ -16,7 +17,7 @@ function SignUpScreen() {
             </View>
             <View style={[{ marginTop: '4%', flexDirection: 'row', justifyContent: 'center' }]}>
                 <Text style={styles.Text3}>Zaten bir hesabın var mı? </Text>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Second Screen')}>
                     <Text style={styles.SignInText}>Giriş Yap!</Text></TouchableOpacity></View>
             <View style={[{ marginTop: '10%', marginLeft: '15%', marginRight: '15%', height: '8%', }]}>
                 <TouchableOpacity style={styles.Facebook}>
