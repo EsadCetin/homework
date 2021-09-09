@@ -1,7 +1,12 @@
-import { Poppins_500Medium } from '@expo-google-fonts/dev';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
+  Screen: {
+    backgroundColor: '#50A162',
+    width: '100%',
+    height: '100%',
+  },
   Text1: {
     fontFamily: 'Yellowtail_400Regular',
     fontSize: 96,
@@ -99,5 +104,17 @@ export default StyleSheet.create({
   InstagramIcon: {
     marginLeft: '40%',
     marginTop: '4%',
+  },
+  item: {
+    backgroundColor: '#DBB364',
+    padding: '5%',
+    marginVertical: '2%',
+    marginHorizontal: '7%',
+    borderRadius: 50,
+  },
+  title: {
+    color: '#fff',
+    fontSize: 22,
+    fontFamily: 'Poppins_400Regular',
   },
 });

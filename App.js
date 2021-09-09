@@ -1,15 +1,30 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Screen2 from './screens/Screen2';
 import SignUpScreen from './screens/SignUpScreen';
+import AppLoading from 'expo-app-loading';
+import { useFonts, Yellowtail_400Regular, Poppins_500Medium, Poppins_400Regular, Moul_400Regular } from '@expo-google-fonts/dev';
+
 const Stack = createNativeStackNavigator();
 export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Giriş Ekranı"
-          options={{ headerShown: false }} component={SignUpScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  let [fontsLoaded] = useFonts({
+    Yellowtail_400Regular,
+    Poppins_400Regular,
+    Moul_400Regular,
+    Poppins_500Medium
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Login">
+          <Stack.Screen name="Giriş Ekranı"
+            options={{ headerShown: false }} component={Screen2} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    );
+  }
 }
