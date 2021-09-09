@@ -15,15 +15,15 @@ const Screen2 = () => {
     );
 
     return (
-        <View style={styles.Screen}>
+
+        <SafeAreaView style={styles.Screen}>
             <Text style={styles.Text1}>torba</Text>
-            <SafeAreaView style={{ marginTop: '15%', }}>
-                <FlatList
-                    data={DATA}
-                    renderItem={renderItem}
-                />
-            </SafeAreaView>
-        </View>
+            <FlatList
+                data={DATA}
+                renderItem={renderItem}
+            />
+        </SafeAreaView>
+
     );
 }
 
