@@ -25,30 +25,33 @@ function SignUpScreen() {
                         <Text style={[{ fontFamily: 'Poppins_400Regular', color: '#fff', fontSize: 18, marginTop: '7%' }]}>Kaydol</Text>
                     </TouchableOpacity>
                 </View>
-                <Text style={styles.Text3}>Zaten bir hesabın var mı? Giriş Yap.</Text>
+                <View style={[{ marginTop: '4%', flexDirection: 'row', justifyContent: 'center' }]}>
+                    <Text style={styles.Text3}>Zaten bir hesabın var mı? </Text>
+                    <TouchableOpacity>
+                        <Text style={styles.SignInText}> Giriş Yap!</Text></TouchableOpacity></View>
                 <View style={[{ marginTop: '10%', marginLeft: '15%', marginRight: '15%', height: '8%', }]}>
                     <TouchableOpacity style={styles.Facebook}>
                         <FontAwesome name="facebook" size={35} color="white"
-                            style={{ marginLeft: '4%' }} />
+                            style={styles.FacebookIcon} />
                         <Text style={styles.FacebookText}>Facebook ile giriş yap</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.Google}>
                         <FontAwesome name="google" size={35} color="#EA4335"
-                            style={{ marginLeft: '4%' }} />
+                            style={styles.GoogleIcon} />
                         <Text style={styles.GoogleText}>Google ile giriş yap</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.Apple}>
                         <FontAwesome name="apple" size={35} color="white"
-                            style={{ marginLeft: '4%' }} />
+                            style={styles.AppleIcon} />
                         <Text style={styles.AppleText}>Apple ile giriş yap</Text>
                     </TouchableOpacity>
                 </View>
                 <Text style={styles.Text4}>Sosyal medyada Torba</Text>
                 <View style={[{ marginLeft: '30%', width: '40%', justifyContent: 'center', flexDirection: 'row', }]}>
                     <FontAwesome name="twitter" size={32} color="#55ACEE"
-                        style={{ marginTop: '4%', }} />
+                        style={styles.TwitterIcon} />
                     <FontAwesome name="instagram" size={30} color="white"
-                        style={{ marginLeft: '40%', marginTop: '4%', }} />
+                        style={styles.InstagramIcon} />
                 </View>
             </View>
 

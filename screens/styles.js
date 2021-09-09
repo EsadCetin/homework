@@ -24,9 +24,10 @@ export default StyleSheet.create({
   Text3: {
     fontFamily: 'Poppins_400Regular',
     color: '#fff',
-    fontSize: 15,
-    textAlign: 'center',
-    marginTop: '4%',
+  },
+  SignInText: {
+    color: '#DBB364',
+    fontFamily: 'Poppins_500Medium',
   },
   Text4: {
     fontFamily: 'Moul_400Regular',
@@ -44,11 +45,14 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  FacebookIcon: {
+    marginLeft: '5%',
+  },
   FacebookText: {
     color: '#fff',
-    marginLeft: '3%',
+    marginLeft: '6%',
     fontFamily: 'Poppins_500Medium',
-    fontSize: 18,
+    fontSize: 15,
   },
   Google: {
     backgroundColor: '#FFFFFF',
@@ -60,11 +64,14 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  GoogleIcon: {
+    marginLeft: '4%',
+  },
   GoogleText: {
     color: '#000000A6',
     marginLeft: '3%',
     fontFamily: 'Poppins_500Medium',
-    fontSize: 18,
+    fontSize: 15,
   },
 
   Apple: {
@@ -77,10 +84,20 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  AppleIcon: {
+    marginLeft: '4%',
+  },
   AppleText: {
     color: '#fff',
-    marginLeft: '3%',
+    marginLeft: '4%',
     fontFamily: 'Poppins_500Medium',
-    fontSize: 18,
-  }
+    fontSize: 15,
+  },
+  TwitterIcon: {
+    marginTop: '4%',
+  },
+  InstagramIcon: {
+    marginLeft: '40%',
+    marginTop: '4%',
+  },
 });
