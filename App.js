@@ -24,8 +24,7 @@ export default function App() {
           <Stack.Screen name="Giriş Ekranı"
             options={{ headerShown: false }} component={SignUpScreen} />
           <Stack.Screen name="Second Screen"
-            options={{ headerShown: false }}
-            component={Screen2} />
+            options={{ headerShown: false }} component={Screen2} />
         </Stack.Navigator>
       </NavigationContainer>
     );

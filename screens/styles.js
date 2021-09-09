@@ -3,13 +3,12 @@ export default StyleSheet.create({
 
   Screen: {
     backgroundColor: '#50A162',
-    width: '100%',
-    height: '100%',
+    flex: 1,
   },
   Text1: {
     fontFamily: 'Yellowtail_400Regular',
     fontSize: 96,
-    marginTop: '20%',
+    marginTop: '15%',
     textAlign: 'center',
     color: '#DBB364',
   },
@@ -37,7 +36,7 @@ export default StyleSheet.create({
     fontFamily: 'Moul_400Regular',
     color: 'black',
     textAlign: 'center',
-    marginTop: '40%',
+    marginTop: '47%',
     fontSize: 16,
   },
   Facebook: {
@@ -115,5 +114,12 @@ export default StyleSheet.create({
     color: '#fff',
     fontSize: 22,
     fontFamily: 'Poppins_400Regular',
+  },
+  TextItem: {
+    fontFamily: 'Yellowtail_400Regular',
+    fontSize: 96,
+    marginTop: '10%',
+    textAlign: 'center',
+    color: '#DBB364',
   },
 });

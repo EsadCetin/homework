@@ -17,7 +17,7 @@ const Screen2 = () => {
     return (
 
         <SafeAreaView style={styles.Screen}>
-            <Text style={styles.Text1}>torba</Text>
+            <Text style={styles.TextItem}>torba</Text>
             <FlatList
                 data={DATA}
                 renderItem={renderItem}
