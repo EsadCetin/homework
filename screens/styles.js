@@ -18,26 +18,28 @@ export default StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
   },
-  Button: {
-    backgroundColor: '#DBB364',
-    alignItems: 'center',
-    height: '100%',
-    borderRadius: 20,
-  },
+
   Text3: {
     fontFamily: 'Poppins_400Regular',
     color: '#fff',
   },
-  SignInText: {
-    color: '#DBB364',
-    fontFamily: 'Poppins_500Medium',
-  },
+
   Text4: {
     fontFamily: 'Moul_400Regular',
     color: 'black',
     textAlign: 'center',
     marginTop: '47%',
     fontSize: 16,
+  },
+  SignInText: {
+    color: '#DBB364',
+    fontFamily: 'Poppins_500Medium',
+  },
+  Button: {
+    backgroundColor: '#DBB364',
+    alignItems: 'center',
+    height: '100%',
+    borderRadius: 20,
   },
   Facebook: {
     backgroundColor: '#1877F2',
@@ -56,6 +58,7 @@ export default StyleSheet.create({
     marginLeft: '6%',
     fontFamily: 'Poppins_500Medium',
     fontSize: 15,
+
   },
   Google: {
     backgroundColor: '#FFFFFF',
@@ -107,7 +110,7 @@ export default StyleSheet.create({
     backgroundColor: '#DBB364',
     padding: 20,
     borderColor: 'black',
-    borderTopWidth: 3,
+    borderTopWidth: 1,
   },
   title: {
     color: '#fff',
@@ -127,7 +130,7 @@ export default StyleSheet.create({
     borderBottomEndRadius: 15,
     width: '50%',
     backgroundColor: '#DBB364',
-    borderWidth: 3,
+    borderWidth: 1,
     borderTopWidth: 0,
 
   },
@@ -135,5 +138,36 @@ export default StyleSheet.create({
     fontSize: 35,
     textAlign: 'center',
     color: '#fff',
+  },
+  Screen3: {
+    backgroundColor: '#50A162',
+    flex: 1,
+  },
+  LockButton: {
+    backgroundColor: '#DBB364',
+    width: '40%',
+    alignSelf: 'center',
+    alignItems: 'center',
+    marginTop: '35%',
+    borderWidth: 1,
+
+  },
+  /* ChangeButton: {
+ 
+     justifyContent: 'center',
+     alignItems: 'center',
+     borderWidth: 1,
+     flex: 1,
+     minWidth: '35%',
+ 
+   },*/
+  ChangeButtonView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: '40%',
+    height: '15%',
+    width: '85%',
+    alignSelf: 'center',
+
   }
 });
