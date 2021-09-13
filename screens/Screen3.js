@@ -1,83 +1,73 @@
-import React, { Component } from 'react';
+
 import { Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import styles from '../screens/styles'
 import { FontAwesome } from '@expo/vector-icons';
+import React, { useState } from 'react';
 
-export default class Screen3 extends Component {
+function Screen3() {
 
-    state = {
-        icon: "lock",
-        icon2: "unlock",
-        pressed: false,
-        pressed2: false,
-        backgroundcolor: 'white',
-        backgroundcolor2: 'yellow',
-        backgroundcolor3: 'white',
-        backgroundcolor4: 'yellow',
+    const [icon, setIcon] = useState(true);
+    const changeIcon = () => setIcon(!icon);
+
+    const [backgroundColor1, setbackgroundColor1] = useState("white");
+    const [backgroundColor2, setbackgroundColor2] = useState("white");
+    const [disabled1, setDisabled1] = useState(false);
+    const [disabled2, setDisabled2] = useState(false);
+
+    const onPress1 = () => {
+        setDisabled2(false);
+        disabled1 == false ? setDisabled1(true) : setDisabled1(false);
+        setbackgroundColor2("white");
+        backgroundColor1 == "white"
+            ? setbackgroundColor1("yellow") : setbackgroundColor1("white");
+    };
+    const onPress2 = () => {
+        setDisabled1(false);
+        disabled2 == false ? setDisabled2(true) : setDisabled2(false);
+        setbackgroundColor1("white");
+        backgroundColor2 == "white"
+            ? setbackgroundColor2("yellow") : setbackgroundColor2("white");
     };
 
-    onPress() {
-        if (!this.state.pressed) {
-            this.setState({ pressed: true, icon: "unlock", icon2: "lock" });
-        }
-        else {
-            this.setState({ pressed: false, icon: "lock", icon2: "unlock" });
-        }
-    }
-    changeBackgroundColor() {
-        if (!this.state.pressed) {
-            this.setState({ pressed: true, backgroundcolor: 'yellow', backgroundcolor2: 'white' });
-        }
-        else {
-            this.setState({ pressed: false, backgroundcolor: 'white', backgroundcolor2: 'yellow' });
-        }
-    }
-    changeBackgroundColor2() {
-        if (!this.state.pressed2) {
-            this.setState({ pressed2: true, backgroundcolor3: 'yellow', backgroundcolor4: 'white' });
-        }
-        else {
-            this.setState({ pressed2: false, backgroundcolor3: 'white', backgroundcolor4: 'yellow' });
-        }
-    }
-
-    render() {
-        return (
-            <View style={styles.Screen3}>
-                <View style={styles.LockButton} >
-                    <TouchableOpacity onPress={() => this.onPress()} >
-
-                        <FontAwesome name={this.state.icon} size={150} color='white' />
-
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.ChangeButtonView}>
-                    <TouchableOpacity style={{
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderWidth: 1,
-                        flex: 1,
-                        minWidth: '35%',
-                        backgroundColor: this.state.backgroundcolor,
-                    }}
-                        onPress={() => this.changeBackgroundColor()}>
-                        <Text style={{ fontSize: 40 }}>1</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={{
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        borderWidth: 1,
-                        flex: 1,
-                        minWidth: '35%',
-                        backgroundColor: this.state.backgroundcolor3,
-                    }}
-                        onPress={() => this.changeBackgroundColor2()}>
-                        <Text style={{ fontSize: 40 }}>2</Text>
-                    </TouchableOpacity>
-                </View>
+    return (
+        <View style={styles.Screen3}>
+            <View style={styles.LockButton} >
+                <TouchableOpacity onPress={changeIcon} >
+                    <FontAwesome name={icon ? 'lock' : 'unlock'} size={150} color='white' />
+                </TouchableOpacity>
             </View>
+            <View style={styles.ChangeButtonView}>
+                <TouchableOpacity
+                    onPress={onPress1} disabled={disabled1}
+                    style={{
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        borderWidth: 1,
+                        flex: 1,
+                        minWidth: '35%',
+                        backgroundColor: backgroundColor1,
 
-        );
-    }
+                    }}
+                >
+                    <Text style={{ fontSize: 40 }}>1</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={onPress2} disabled={disabled2}
+                    style={{
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        borderWidth: 1,
+                        flex: 1,
+                        minWidth: '35%',
+                        backgroundColor: backgroundColor2,
+
+                    }}
+                >
+                    <Text style={{ fontSize: 40 }}>2</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    );
 }
+export default Screen3;

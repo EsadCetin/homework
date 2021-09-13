@@ -150,17 +150,10 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: '35%',
     borderWidth: 1,
+    height: '20%',
 
   },
-  /* ChangeButton: {
- 
-     justifyContent: 'center',
-     alignItems: 'center',
-     borderWidth: 1,
-     flex: 1,
-     minWidth: '35%',
- 
-   },*/
+
   ChangeButtonView: {
     flexDirection: 'row',
     justifyContent: 'space-between',
