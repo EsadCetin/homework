@@ -10,7 +10,7 @@ function SignUpScreen({ navigation }) {
             <Text style={styles.Text1}>torba</Text>
             <Text style={styles.Text2}>torbada fırsat var</Text>
             <View style={[{ marginTop: '15%', marginLeft: '15%', marginRight: '15%', height: '8%', }]}>
-                <TouchableOpacity style={styles.Button}>
+                <TouchableOpacity onPress={() => navigation.navigate('Third Screen')} style={styles.Button}>
                     <Text style={[{ fontFamily: 'Poppins_400Regular', color: '#fff', fontSize: 18, marginTop: '7%' }]}>Kaydol</Text>
                 </TouchableOpacity>
             </View>
@@ -19,7 +19,7 @@ function SignUpScreen({ navigation }) {
                 <TouchableOpacity onPress={() => navigation.navigate('Second Screen')}>
                     <Text style={styles.SignInText}>Giriş Yap!</Text></TouchableOpacity></View>
             <View style={[{ marginTop: '15%', marginLeft: '15%', marginRight: '15%', height: '8%', }]}>
-                <TouchableOpacity style={styles.Facebook}>
+                <TouchableOpacity onPress={() => navigation.navigate("Fourth Screen")} style={styles.Facebook}>
                     <FontAwesome name="facebook" size={35} color="white"
                         style={styles.FacebookIcon} />
                     <Text style={styles.FacebookText}>Facebook ile giriş yap</Text>

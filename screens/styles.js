@@ -139,10 +139,6 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: '#fff',
   },
-  Screen3: {
-    backgroundColor: '#50A162',
-    flex: 1,
-  },
   LockButton: {
     backgroundColor: '#DBB364',
     width: '40%',

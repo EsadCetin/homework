@@ -31,7 +31,7 @@ function Screen3() {
     };
 
     return (
-        <View style={styles.Screen3}>
+        <View style={styles.Screen}>
             <View style={styles.LockButton} >
                 <TouchableOpacity onPress={changeIcon} >
                     <FontAwesome name={icon ? 'lock' : 'unlock'} size={150} color='white' />
