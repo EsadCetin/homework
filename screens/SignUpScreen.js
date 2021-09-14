@@ -10,7 +10,7 @@ function SignUpScreen({ navigation }) {
             <Text style={styles.Text1}>torba</Text>
             <Text style={styles.Text2}>torbada fırsat var</Text>
             <View style={[{ marginTop: '15%', marginLeft: '15%', marginRight: '15%', height: '8%', }]}>
-                <TouchableOpacity onPress={() => navigation.navigate('Third Screen')} style={styles.Button}>
+                <TouchableOpacity onPress={() => navigation.navigate('Fifth Screen')} style={styles.Button}>
                     <Text style={[{ fontFamily: 'Poppins_400Regular', color: '#fff', fontSize: 18, marginTop: '7%' }]}>Kaydol</Text>
                 </TouchableOpacity>
             </View>

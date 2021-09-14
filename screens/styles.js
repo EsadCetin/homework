@@ -158,5 +158,43 @@ export default StyleSheet.create({
     width: '85%',
     alignSelf: 'center',
 
+  },
+
+  TextInput: {
+    marginTop: '9%',
+    backgroundColor: '#DBB364',
+    width: '75%',
+    padding: '5%',
+    alignSelf: 'center',
+    borderRadius: 21,
+    fontSize: 18,
+    fontFamily: 'Poppins_500Medium',
+    color: 'white',
+
+  },
+  AddButton: {
+    backgroundColor: '#fff',
+    marginTop: '15%',
+    height: '25%',
+    width: '50%',
+    alignSelf: 'center',
+    borderRadius: 21,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  Add: {
+    fontSize: 25,
+    fontFamily: 'Poppins_500Medium',
+  },
+  Check: {
+    alignSelf: 'center',
+    width: 250,
+    height: 250,
+    marginTop: '30%',
+  },
+  Success: {
+    fontSize: 40,
+    textAlign: 'center',
+    marginTop: '15%',
   }
 });
