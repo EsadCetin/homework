@@ -186,15 +186,9 @@ export default StyleSheet.create({
     fontSize: 25,
     fontFamily: 'Poppins_500Medium',
   },
-  Check: {
-    alignSelf: 'center',
-    width: 250,
-    height: 250,
-    marginTop: '30%',
-  },
   Success: {
     fontSize: 40,
     textAlign: 'center',
-    marginTop: '15%',
+    marginTop: '50%',
   }
 });

@@ -1,13 +1,13 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import styles from "./styles";
 
-function Screen6({ route }) {
-    const { image, text } = route.params;
+function Screen6({ }) {
+
     return (
         <View style={styles.Screen}>
-            <Image style={styles.Check} source={{ uri: image }} />
-            <Text style={styles.Success}>Hoşgeldin {text} </Text>
+
+            <Text style={styles.Success}>Hoşgeldiniz </Text>
             <Text style={styles.Success}>Kayıt Başarılı!</Text>
         </View>
     );
